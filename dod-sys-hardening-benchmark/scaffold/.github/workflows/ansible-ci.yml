@@ -1,0 +1,11 @@
+name: Ansible Lint
+on: [push]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Ansible
+        run: sudo apt-get install -y ansible
+      - name: Lint Playbook
+        run: ansible-lint playbooks/harden.yml

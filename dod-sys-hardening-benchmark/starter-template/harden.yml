@@ -1,0 +1,8 @@
+- name: Basic SSH Hardening
+  hosts: localhost
+  tasks:
+    - name: Disable root login via SSH
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
