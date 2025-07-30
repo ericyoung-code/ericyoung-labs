@@ -22,7 +22,7 @@ This portfolio highlights my practical skills using modern tooling like Terrafor
 | Project | Description |
 |--------|-------------|
 | [`secure-vpc-network-deploy`](./secure-vpc-network-deploy) | Deploys a secure VPC on AWS with public/private subnets using Terraform. |
-| [`ics-sensor-sim-lab`](./ics-sensor-sim-lab) | Simulates ICS (Industrial Control System) sensor traffic to test network visibility and monitoring pipelines. |
+| [`ics-sensor-sim-lab`](./ics-sensor-sim-lab) | Simulates control system sensor traffic to test network visibility and monitoring infrastructure. |
 | [`splunk-logparser-toolkit`](./splunk-logparser-toolkit) | Parses structured logs for anomalies or alerts, built for use with Splunk or local triage. |
 | [`incident-response-automation`](./incident-response-automation) | Automates actions based on alert log patterns for basic incident response tasks. |
 | [`dod-sys-hardening-benchmark`](./dod-sys-hardening-benchmark) | Ansible-based system hardening project aligned with DISA STIG and NIST 800-53 controls. |
