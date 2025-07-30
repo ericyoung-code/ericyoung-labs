@@ -1,6 +1,6 @@
 # Eric Young's Cybersecurity & Infrastructure Project Portfolio
 
-Welcome to **ericyoung-labs** — a curated showcase of real-world technical projects demonstrating cybersecurity, infrastructure automation, and system integration skills.
+Welcome to **ericyoung-labs** — a curated showcase of real-world technical projects demonstrating cybersecurity, infrastructure automation, and system integration projects.
 
 ---
 
