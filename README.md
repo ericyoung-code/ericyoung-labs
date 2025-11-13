@@ -26,6 +26,7 @@ This portfolio highlights my practical skills using modern tooling like Terrafor
 | [`splunk-logparser-toolkit`](./splunk-logparser-toolkit) | Parses structured logs for anomalies or alerts, built for use with Splunk or local triage. |
 | [`incident-response-automation`](./incident-response-automation) | Automates actions based on alert log patterns for basic incident response tasks. |
 | [`dod-sys-hardening-benchmark`](./dod-sys-hardening-benchmark) | Ansible-based system hardening project aligned with DISA STIG and NIST 800-53 controls. |
+| ['n-ether'].(/n-ehter). | Network enumeration tool for host exploration and recon. |
 
 ---
 
