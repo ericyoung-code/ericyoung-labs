@@ -75,6 +75,22 @@ def run_vpc_generator(args):
     except subprocess.CalledProcessError as e:
         print(f"[-] Error running generator: {e}")
 
+def run_n_ether(args):
+    """Runs the N-ETHER Network Scanner."""
+    print(f"[*] Starting N-ETHER Scanner...")
+    
+    # Construct path to the lab's main.py
+    lab_path = os.path.join(os.path.dirname(__file__), 'n-ether', 'main.py')
+    
+    cmd = [sys.executable, lab_path, '--target', args.target, '--output', args.output]
+    if args.quick:
+        cmd.append('--quick')
+        
+    try:
+        subprocess.run(cmd, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"[-] Error running scanner: {e}")
+
 def main():
     parser = argparse.ArgumentParser(description="EricYoung Labs - Unified Tool Runner")
     subparsers = parser.add_subparsers(dest='tool', help='Available tools')
@@ -107,8 +123,16 @@ def main():
     vpc_parser.add_argument('--subnets', type=int, default=2, help='Number of subnets')
     vpc_parser.add_argument('--output', type=str, default='generated_vpc.tf', help='Output file')
     vpc_parser.set_defaults(func=run_vpc_generator)
+    
+    # N-ETHER Subcommand
+    nether_parser = subparsers.add_parser('n-ether', help='Run N-ETHER Network Enumerator')
+    nether_parser.add_argument('-t', '--target', required=True, help='Target IP or File List')
+    nether_parser.add_argument('-q', '--quick', action='store_true', help='Quick Scan')
+    nether_parser.add_argument('--output', default='scan_summary.txt', help='Output file')
+    nether_parser.set_defaults(func=run_n_ether)
 
     args = parser.parse_args()
+
 
 
 
