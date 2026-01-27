@@ -6,9 +6,8 @@ This tool provides a calculator and generator for AWS VPC Terraform configuratio
 - **Dynamic CIDR Calculation**: Input a generic CIDR (e.g., `10.0.0.0/16`) and get valid subnet logic.
 - **Terraform Output**: Generates a ready-to-deploy `main.tf` file.
 
-## Usage
-
-You can run this tool using the unified `lab_runner.py` in the root directory:
+## Quick Start
+To use this tool, run the generator:
 
 ```bash
 # Generate a VPC with 3 subnets

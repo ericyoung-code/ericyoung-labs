@@ -6,9 +6,8 @@ This tool simulates automated defensive actions, such as blocking an IP address 
 - **Automated Response**: Appends "BLOCK" rules to a simulated firewall configuration file (`firewall_rules.txt`).
 - **Audit Logging**: Logs the time, action, and reason for every response.
 
-## Usage
-
-You can run this tool using the unified `lab_runner.py` in the root directory:
+## Quick Start
+To use this tool, run the responder:
 
 ```bash
 # Block an IP address

@@ -6,9 +6,8 @@ This tool simulates a security compliance audit, checking system configurations 
 - **Simulated Checks**: Verifies simulated system states like "SSH Root Login" or "Password Complexity".
 - **Reporting**: Generates a detailed JSON report with pass/fail status for each check.
 
-## Usage
-
-You can run this tool using the unified `lab_runner.py` in the root directory:
+## Quick Start
+To use this tool, run the auditor:
 
 ```bash
 # Run audit with 'standard' profile

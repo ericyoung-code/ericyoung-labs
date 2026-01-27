@@ -10,9 +10,8 @@ N-ETHER is a concurrent network scanner designed for speed and flexibility. It a
 - **Target Flexibility**: Accepts a single IP or a file containing a list of targets.
 - **Reporting**: Consolidates results into a single summary file.
 
-## Usage
-
-Run it via the unified lab runner:
+## Quick Start
+To use this tool, run the scanner:
 
 ```bash
 # Scan a single target (Quick Mode)

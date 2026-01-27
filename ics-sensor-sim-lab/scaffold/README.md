@@ -7,9 +7,8 @@ This tool simulates network traffic typical of an Industrial Control System (ICS
 - Simulates common Modbus function codes (Read Coils, Write Registers, etc.).
 - Outputs data to a CSV log file.
 
-## Usage
-
-You can run this tool using the unified `lab_runner.py` in the root directory:
+## Quick Start
+To use this tool, run the simulator:
 
 ```bash
 # Run for 30 seconds and save to traffic.log
